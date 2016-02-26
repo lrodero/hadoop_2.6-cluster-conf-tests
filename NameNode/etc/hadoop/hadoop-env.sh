@@ -22,8 +22,8 @@
 # remote nodes.
 
 # The java implementation to use.
-export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
-export HADOOP_HOME=/home/lrodero/Software/hadoop-2.6.0
+#export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+#export HADOOP_HOME=/home/lrodero/Software/hadoop-2.6.0
 
 # The jsvc implementation to use. Jsvc is required to run secure datanodes
 # that bind to privileged ports to provide authentication of data transfer
@@ -71,7 +71,7 @@ export HADOOP_SECURE_DN_USER=${HADOOP_SECURE_DN_USER}
 
 # Where log files are stored.  $HADOOP_HOME/logs by default.
 #export HADOOP_LOG_DIR=${HADOOP_LOG_DIR}/$USER
-export HADOOP_LOG_DIR=/home/lrodero/Software/hadoop-cluster-for-2.6/NameNode/log
+export HADOOP_LOG_DIR=/home/lrodero/Software/repositories/lrodero/hadoop_2.6-cluster-conf-tests/NameNode/log
 
 # Where log files are stored in the secure data environment.
 export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
@@ -94,7 +94,7 @@ export HADOOP_SECURE_DN_LOG_DIR=${HADOOP_LOG_DIR}/${HADOOP_HDFS_USER}
 #       the user that will run the hadoop daemons.  Otherwise there is the
 #       potential for a symlink attack.
 #export HADOOP_PID_DIR=${HADOOP_PID_DIR}
-export HADOOP_PID_DIR=/home/lrodero/Software/hadoop-cluster-for-2.6/NameNode/pid
+export HADOOP_PID_DIR=/home/lrodero/Software/repositories/lrodero/hadoop_2.6-cluster-conf-tests/NameNode/log
 export HADOOP_SECURE_DN_PID_DIR=${HADOOP_PID_DIR}
 
 # A string representing this instance of hadoop. $USER by default.

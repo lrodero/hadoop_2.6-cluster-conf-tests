@@ -25,7 +25,7 @@
 
   <property>
     <name>dfs.datanode.data.dir</name>
-    <value>/home/lrodero/Software/hadoop-cluster-for-2.6/DataNode1/data</value>
+    <value>/home/lrodero/Software/repositories/lrodero/hadoop_2.6-cluster-conf-tests/DataNode1/data</value>
   </property>
 
   <property>
