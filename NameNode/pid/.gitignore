@@ -1,0 +1,5 @@
+# Ignore all contents of this folder excepts .gitignore itself.
+# The idea is to force git to track this folder but not its contents.
+*
+!.gitignore
+
