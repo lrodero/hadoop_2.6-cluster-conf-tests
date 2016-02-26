@@ -17,10 +17,12 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+  <!-- WE SET IT BY HADOOP_OPTS ENV VAR
   <property>
     <name>dfs.namenode.name.dir</name>
-    <value>/home/lrodero/Software/repositories/lrodero/hadoop_2.6-cluster-conf-tests/NameNode/data</value>
+    <value></value>
   </property>
+  -->
 
   <property>
     <name>dfs.namenode.rpc-address</name>

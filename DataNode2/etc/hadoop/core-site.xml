@@ -19,8 +19,8 @@
 <configuration>
   <property>
     <name>fs.defaultFS</name>
-    <value>hfds://127.0.0.1:50050/</value>
-    <!-- <description>
+    <value>hfds://localhost:50050/</value>
+    <description>
       Default URI for all filesystem requests in Hadoop. Thus, for
       example, when requesting
       $ hdfs dfs -ls /
@@ -31,7 +31,7 @@
       hdfs-site.xml config file of the NameNode. Another option is to
       set this fs.defaultFS paremeter with that hdfs address, but
       I find it a bit messy.
-    </description> -->
+    </description>
   </property>
   <!-- NOTE: fs.defaultFS is the new name of fs.default.name, that other
        name is DEPRECATED. -->
