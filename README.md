@@ -10,7 +10,7 @@ These scripts assume you have Java and  `$JAVA_HOME` and `$HADOOP_HOME` properly
 $ git clone https://github.com/lrodero/hadoop_2.6-cluster-conf-tests.git
 $ cd hadoop_2.6-cluster-conf-tests/
 $ ./NameNode/formatFS.sh
-$ ./startAll.sh
+$ ./startHDFS.sh
 ```
 
 Now HDFS is ready! For example you can run:
@@ -21,6 +21,6 @@ Found 1 items
 drwxr-xr-x   - yourusername supergroup          0 2016-02-26 18:58 hdfs://localhost:50050/hello
 ```
 
-Likewise, in the same folder than `startAll.sh` yo will find `stopAll.sh` that will stop all nodes in the cluster (if they are running) and `clearAllData.sh` that removes _all_ data of the HDFS system (it calls `stopAll.sh` first) and reformats its file system so you can easily start with a new brand cluster whenever you want.
+Likewise, in the same folder than `startHDFS.sh` yo will find `stopHDFS.sh` that will stop all nodes in the cluster (if they are running) and `clearAllData.sh` that removes _all_ data of the HDFS system (it calls `stopHDFS.sh` first) and reformats its file system so you can easily start with a new brand cluster whenever you want.
 
-In `hadoop_2.6-cluster-conf-tests/NameNode`, `hadoop_2.6-cluster-conf-tests/DataNode1` and `hadoop_2.6-cluster-conf-tests/DataNode2` you will find all data folders (for logs, pids, tmp, data...) required by each node, along with some scripts to start and stop each node (`startNameNode.sh`, etc). In fact, `startAll.sh` and `stopAll.sh` just call the required scripts in those subfolders.
+In `hadoop_2.6-cluster-conf-tests/NameNode`, `hadoop_2.6-cluster-conf-tests/DataNode1` and `hadoop_2.6-cluster-conf-tests/DataNode2` you will find all data folders (for logs, pids, tmp, data...) required by each node, along with some scripts to start and stop each node (`startNameNode.sh`, etc). In fact, `startHDFS.sh` and `stopHDFS.sh` just call the required scripts in those subfolders.
