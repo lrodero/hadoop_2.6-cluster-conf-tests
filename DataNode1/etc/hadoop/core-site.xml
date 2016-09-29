@@ -19,7 +19,7 @@
 <configuration>
   <property>
     <name>fs.defaultFS</name>
-    <value>hfds://localhost:50050/</value>
+    <value>hdfs://localhost:50050/</value>
     <description>
       Default URI for all filesystem requests in Hadoop. Thus, for
       example, when requesting
