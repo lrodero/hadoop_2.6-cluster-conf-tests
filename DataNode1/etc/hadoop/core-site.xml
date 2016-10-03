@@ -35,4 +35,26 @@
   </property>
   <!-- NOTE: fs.defaultFS is the new name of fs.default.name, that other
        name is DEPRECATED. -->
+
+
+  <property>
+    <name>hadoop.proxyuser.lrodero.hosts</name>
+    <value>*</value>
+ </property>
+  <property>
+    <name>hadoop.proxyuser.lrodero.groups</name>
+    <value>*</value>
+  </property>
+  <!-- NOTE: these two parameters are set like that so we can
+       login into hive using lrodero user -->
+
+  <property>
+    <name>hadoop.proxyuser.sqoop2.hosts</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>hadoop.proxyuser.sqoop2.groups</name>
+    <value>*</value>
+  </property>
+  <!-- NOTE: these two parameters are required by sqoop -->
 </configuration>
